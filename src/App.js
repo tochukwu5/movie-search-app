@@ -38,7 +38,7 @@ if (loading) {
         <Router>
     <Navbar  />
     <Switch>
-    <Route exact path= "/">
+    <Route exact path= "/movie-search-app">
           <Home />
           </Route>
           <Route path= "/movies/:id">           

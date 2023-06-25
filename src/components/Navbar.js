@@ -12,10 +12,10 @@ function Navbar() {
           <Link to='/'>
               <h1 className='text-[#ffffffcc] ml-5 mb-5  my-auto font-bold md:font-extrabold text-[25px] md:text-[25px] cursor-pointer '>Movie Search App </h1>
           </Link>  
-          {location.pathname === "/" ? (
+          {location.pathname === "/movie-search-app" ? (
           <InputForm />
         ) : (
-          <Link to="/" >
+          <Link to="/movie-search-app" >
             <div className="mx-auto bg-blue-600 p-2 font-medium rounded-xl w-[110px] text-center"> Home page</div>
           </Link>
         )}        
