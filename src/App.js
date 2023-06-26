@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import {BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import MovieInfo from './components/MovieInfo';
 import Loading from './components/Loading';
+import NotFoundPage from './components/NotFoundPage';
 
 
 function App() {
@@ -43,6 +44,9 @@ if (loading) {
           </Route>
           <Route path= "/movies/:id">           
             <MovieInfo/>
+          </Route>
+          <Route path= "*">           
+            <NotFoundPage/>
           </Route>
 
     </Switch>
