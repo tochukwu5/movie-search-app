@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className='flex md:block bg-[#212121]'>
         <div className="navbar bg-[#212121] mx-auto  md:flex md:justify-between	pt-5 h-20 text-white md:px-[150px] drop-shadow-2xl">
-          <Link to='/'>
+          <Link to='/movie-search-app'>
               <h1 className='text-[#ffffffcc] ml-5 mb-5  my-auto font-bold md:font-extrabold text-[25px] md:text-[25px] cursor-pointer '>Movie Search App </h1>
           </Link>  
           {location.pathname === "/movie-search-app" ? (
