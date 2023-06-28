@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import {BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import MovieInfo from './components/MovieInfo';
 import Loading from './components/Loading';
-import NotFoundPage from './components/NotFoundPage';
 
 
 function App() {
@@ -36,7 +35,7 @@ if (loading) {
   return (
     <div className="App bg-[#212121] pb-12 ">
       <MyContext.Provider value={{ searchTerm, setSearchTerm, fetchMovie, movies, setMovies, loading, setLoading }}>
-        <Router>
+        <Router basename='movie-search-app'>
     <Navbar  />
     <Switch>
     <Route exact path= "/movie-search-app">
