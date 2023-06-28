@@ -44,9 +44,6 @@ if (loading) {
           <Route path= "/movies/:id">           
             <MovieInfo/>
           </Route>
-          <Route path= "*">           
-            <NotFoundPage/>
-          </Route>
 
     </Switch>
     </Router>
